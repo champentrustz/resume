@@ -11,15 +11,15 @@
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Athiti');
-    *{
-        font-family: 'Athiti', sans-serif;
-    }
-    .show-font{
-        font-family: 'Athiti', sans-serif;
-    }
-</style>
+<!--<style>-->
+    <!--@import url('https://fonts.googleapis.com/css?family=Athiti');-->
+    <!--*{-->
+        <!--font-family: 'Athiti', sans-serif;-->
+    <!--}-->
+    <!--.show-font{-->
+        <!--font-family: 'Athiti', sans-serif;-->
+    <!--}-->
+<!--</style>-->
 
 <body class="card pt-30" id="capture">
 
@@ -28,6 +28,7 @@
 
         <div class="col-md-12">
 
+            <!--<button onclick="takeScreenShot()">dasd</button>-->
 
         <div class="row">
 
@@ -135,7 +136,7 @@
                             <div class="card-body">
                             <ul class="fs-18">
                                 <li>
-                                    <span class="show-font text-info">Web Developer (1 year, SEP 2017 - AUG 2018)</span>
+                                    <span class="show-font text-info">Web Developer (SEP 2017 - AUG 2018)</span>
                                     <br/><span class="font-weight-bold">OM FOR YOU Co.Ltd.</span>
                                     <br/>- Develop GE-Smart Classroom project with react framework, nodejs, graphql, sequelize and php
                                     <br/>- Develop yaris-ativ club project with php (laravel framework)
@@ -193,7 +194,7 @@
                                    <div class="card card-body text-center">
 
                                        <span class="fab fa-php text-purple fs-50"></span>
-                                       <small class="show-font fs-17 text-info">PHP</small>
+                                       <small class="show-font fs-15 text-info">PHP</small>
 
                                        <span>
                                             <span class="fa fa-star fs-20 text-warning"></span>
@@ -231,7 +232,7 @@
                                        <div class="card card-body text-center">
 
                                            <span class="fab fa-laravel text-danger fs-50"></span>
-                                           <small class="show-font fs-17 text-info">Laravel</small>
+                                           <small class="show-font fs-15 text-info">Laravel</small>
 
                                            <span>
                                             <span class="fa fa-star fs-20 text-warning"></span>
@@ -249,7 +250,7 @@
                                        <div class="card card-body text-center">
 
                                            <span class="fab fa-react text-info fs-50"></span>
-                                           <small class="show-font fs-17 text-info">React</small>
+                                           <small class="show-font fs-15 text-info">React</small>
 
                                            <span>
                                             <span class="fa fa-star fs-20 text-warning"></span>
@@ -267,7 +268,7 @@
                                        <div class="card card-body text-center">
 
                                            <span class="fab fa-js-square text-success fs-50"></span>
-                                           <small class="show-font fs-17 text-info">Javascript</small>
+                                           <small class="show-font fs-15 text-info">Javascript</small>
 
                                            <span>
                                             <span class="fa fa-star fs-20 text-warning"></span>
@@ -285,7 +286,7 @@
                                        <div class="card card-body text-center">
 
                                            <span class="fab fa-node-js text-success fs-50"></span>
-                                           <small class="show-font fs-17 text-info">NodeJS</small>
+                                           <small class="show-font fs-15 text-info">NodeJS</small>
 
                                            <span>
                                             <span class="fa fa-star fs-20 text-warning"></span>
@@ -303,7 +304,7 @@
                                        <div class="card card-body text-center">
 
                                            <span class="fab fa-angular text-danger fs-50"></span>
-                                           <small class="show-font fs-17 text-info">Angular5</small>
+                                           <small class="show-font fs-15 text-info">Angular5</small>
 
                                            <span>
                                             <span class="fa fa-star fs-20 text-warning"></span>
@@ -321,7 +322,7 @@
                                        <div class="card card-body text-center">
 
                                            <span class="ion-ionic text-info fs-50"></span>
-                                           <small class="show-font fs-17 text-info">Ionic3</small>
+                                           <small class="show-font fs-15 text-info">Ionic3</small>
 
                                            <span>
                                             <span class="fa fa-star fs-20 text-warning"></span>
@@ -357,7 +358,7 @@
                                        <div class="card card-body text-center">
 
                                            <span class="fab fa-java text-danger fs-50"></span>
-                                           <small class="show-font fs-17 text-info">Java</small>
+                                           <small class="show-font fs-15 text-info">Java</small>
 
                                            <span>
                                             <span class="fa fa-star fs-20 text-warning"></span>
@@ -479,15 +480,15 @@
 <script src="js/script.min.js"></script>
 <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
-    <!--<script>-->
+    <script>
+
+        setTimeout(function(){ html2canvas(document.querySelector("#capture")).then(canvas => {
+            document.body.appendChild(canvas)
+        }); }, 100);
 
 
 
-        <!--window.takeScreenShot = html2canvas(document.querySelector("#capture")).then(canvas => {-->
-            <!--document.body.appendChild(canvas)-->
-        <!--});-->
-
-    <!--</script>-->
+    </script>
 
 
 </body>
